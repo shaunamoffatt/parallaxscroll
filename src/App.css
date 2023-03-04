@@ -1,6 +1,191 @@
+@font-face {
+  font-family: "bobby";   /*Can be any text*/
+  src: local("bobby"),
+    url("./fonts/bobby.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "genty";   /*Can be any text*/
+  src: local("genty"),
+    url("./fonts/genty.ttf") format("truetype");
+}
+
+h2 {
+  font-family: "genty";
+  font-size: 8vh;
+  text-align: center;
+  max-width: 60vw;
+  font-weight: 100;
+}
+
+h1 {
+  font-family: "bobby";
+  font-size: 10vh;
+  text-align: center; 
+}
+
+.note{font-family: "Century Gothic", CenturyGothic, AppleGothic, 
+ bold; font-size: 5vh; 
+ font-weight: 800;
+  font-style: bold; 
+  font-variant: bold; 
+  text-align: center; }
+
+  @media screen and (max-width: 1000px) {
+
+    .note{
+      font-size: 1.25em  ;
+    }
+    h2{
+      font-size: 2.5em;
+    }
+  
+  }
+  
+
+.mediumtextbox{
+  max-width: 400px;
+}
+
+.padded {
+  padding:5vw ;
+}
+
+.sidepadding{
+  padding:0 5vw;
+
+}
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.red{
+  color: #ed1c24;
+}
+
+.blue{
+  color: #0170f9;
+}
+
+.yellow{
+  color: #fec900;
+}
+
+.white{
+  color: white;
+}
+
+.dark{
+  color: #1f404d;
+}
+
+.green{
+  color: #1ca379;
+}
+
+
+
+.darkoutline{
+  -webkit-text-stroke-color: #1f404d;
+  text-shadow:
+  -2px -2px 0 #1f404d,  
+   2px -2px 0 #1f404d,
+   -2px 2px 0 #1f404d,
+    2px 2px 0 #1f404d;
+}
+
+.fix-stroke {
+  paint-order: stroke fill;
+}
+
+.darkbackground{
+  background-color: #363636;
+  max-height: 500px;
+}
+
+.margintop{
+  padding-left: 300px;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20 auto;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.flex-container {
+  flex-direction: row;
+  justify-content: center; /* align horizontal */
+  align-items: baseline;
+  flex: 2 1 auto; 
+  flex-flow:row;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+display: flex;
+-webkit-flex-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+}
+
+.bunting{
+  height:1vh;
+  flex: 2; 
+  max-width: 100%;
+  padding-bottom: 1em;
+}
+
+.box{
+  display: inline-block;
+}
+
+
+.title{
+  margin-top: 2vh;
+}
+
+img{
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+
+  img{
+    max-width: 100%;
+  }
+  
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .container header .header-nav-area #nav_container  {
+    display:flex;
+  }
+}
+
+
+
+
+
+.btn-custom {
+  color: green
+}
+
 .App {
   text-align: center;
 }
+
 
 .App-logo {
   height: 40vmin;
