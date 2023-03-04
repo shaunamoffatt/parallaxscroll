@@ -84,8 +84,6 @@ h1 {
   color: #1ca379;
 }
 
-
-
 .darkoutline{
   -webkit-text-stroke-color: #1f404d;
   text-shadow:
@@ -102,6 +100,7 @@ h1 {
 .darkbackground{
   background-color: #363636;
   max-height: 500px;
+  margin-top: 10vh;
 }
 
 .margintop{
@@ -144,11 +143,6 @@ display: flex;
   max-width: 100%;
   padding-bottom: 1em;
 }
-
-.box{
-  display: inline-block;
-}
-
 
 .title{
   margin-top: 2vh;

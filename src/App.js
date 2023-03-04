@@ -4,9 +4,11 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function App() {
 const skypost_mobile = 1.7;
-const skypost_desktop = 1.97;
+const skypost_desktop = 2;
 const pencilpost_mobile = 3;
-const pencilpost_desktop = 3.5;
+const pencilpost_desktop = 3.85;
+const nightpost_mobile = 3.6;
+const nightpost_desktop = 4.2;
 
   return (
     <div id="root">
@@ -112,7 +114,7 @@ const pencilpost_desktop = 3.5;
         <ParallaxLayer
           offset={window.innerWidth < 748 ? skypost_mobile + 0.05: 1.97}
           speed={-0.2}
-          factor={5} //length pof background
+          factor={3} //length pof background
         >
           <div class="center">
             <img src={IMAGES.sun} alt="activities" />
@@ -180,7 +182,7 @@ const pencilpost_desktop = 3.5;
         >
         </ParallaxLayer>
         <ParallaxLayer
-          offset={window.innerWidth < 748 ? (pencilpost_mobile + 0.02) : (pencilpost_desktop+0.02)}
+          offset={window.innerWidth < 748 ? (pencilpost_mobile + 0.145) : (pencilpost_desktop+0.145)}
           speed={0.5}
           factor={1.2} //length pof background
         >
@@ -194,7 +196,7 @@ const pencilpost_desktop = 3.5;
         </ParallaxLayer>
         {/* PAGE 5 nightitme */}
         <ParallaxLayer
-          offset={window.innerWidth < 748 ? 3.6 : 4}
+          offset={window.innerWidth < 748 ? nightpost_mobile : nightpost_desktop}
           speed={0.5}
           factor={5} //length pof background
           style={{
@@ -204,7 +206,7 @@ const pencilpost_desktop = 3.5;
         ></ParallaxLayer>
         {/* PAGE 5 nightitme content */}
         <ParallaxLayer
-          offset={window.innerWidth < 748 ? 3.6 : 4}
+          offset={window.innerWidth < 748 ? nightpost_mobile: nightpost_desktop}
           speed={0.4}
           factor={10} //length pof background
         >
