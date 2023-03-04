@@ -39,6 +39,9 @@ h1 {
     h2{
       font-size: 2.5em;
     }
+    h1{
+      font-size: 3em;
+    }
   
   }
   
@@ -156,7 +159,7 @@ img{
 @media screen and (max-width: 1000px) {
 
   img{
-    max-width: 100%;
+    
   }
   
 }
@@ -168,13 +171,6 @@ img{
   }
 }
 
-
-
-
-
-.btn-custom {
-  color: green
-}
 
 .App {
   text-align: center;

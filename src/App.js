@@ -156,7 +156,7 @@ const nightpost_desktop = 4.2;
           </div>
           {/* Dress note*/}
           <div class="yellow note darkoutline fix-stroke padded">
-            Dress comfy with an artsy striped top
+            Dress comfy and casual!
           </div>
           {/*Activities*/}
           <div class="center">
