@@ -247,7 +247,7 @@ const pencilpost_desktop = 3.5;
             But we'll be sure to have a few mixers and treats for everyone!<br/>
             (Just In Case!!) <br/> <br/>
             </div>
-            <div class="white">So dust those dancing shoes off, get those party feet read, mark that calender off and we will see you for a night to remember in June!</div>
+            <div class="white">So dust those dancing shoes off, get those party feet ready, mark that calender off and we will see you for a night to remember in June!</div>
           </div>
         </ParallaxLayer>
       </Parallax>
