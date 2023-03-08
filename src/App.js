@@ -3,12 +3,12 @@ import IMAGES from "./Images";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function App() {
-const skypost_mobile = 1.7;
-const skypost_desktop = 2;
-const pencilpost_mobile = 3;
-const pencilpost_desktop = 3.85;
-const nightpost_mobile = 3.6;
-const nightpost_desktop = 4.2;
+  const skypost_mobile = 1.7;
+  const skypost_desktop = 2;
+  const pencilpost_mobile = 3;
+  const pencilpost_desktop = 4;
+  const nightpost_mobile = 3.6;
+  const nightpost_desktop = 4.8;
 
   return (
     <div id="root">
@@ -24,7 +24,6 @@ const nightpost_desktop = 4.2;
           }}
         ></ParallaxLayer>
         {/* Title */}
-        <h2>You are Invited to ...</h2>
         <ParallaxLayer offset={0} speed={0.4} factor={2}>
           {/* Bunting */}
           <div class="flex-container bunting">
@@ -101,30 +100,34 @@ const nightpost_desktop = 4.2;
 
         {/* PAGE 3  daytimefun*/}
         <ParallaxLayer
-          offset={window.innerWidth < 748 ? skypost_mobile : 1.97}
+          offset={window.innerWidth < 748 ? skypost_mobile : skypost_desktop}
           speed={0.5}
-          factor={3} //length pof background
+          factor={4} //length pof background
           style={{
             backgroundImage: `url(${IMAGES.blue_background})`,
             backgroundSize: "cover",
           }}
         ></ParallaxLayer>
 
-        {/**TODO SUN */}
+        {/**SUN */}
         <ParallaxLayer
-          offset={window.innerWidth < 748 ? skypost_mobile + 0.05: 1.97}
-          speed={-0.2}
-          factor={3} //length pof background
+          offset={
+            window.innerWidth < 748
+              ? skypost_mobile + 0.5
+              : skypost_desktop + 0.5
+          }
+          speed={-0.4}
+          factor={4} //length pof background
         >
           <div class="center">
             <img src={IMAGES.sun} alt="activities" />
           </div>
         </ParallaxLayer>
-        {/* PAGE 3  clouds*/}
+        {/*clouds*/}
         <ParallaxLayer
-          offset={window.innerWidth < 748 ?skypost_mobile: 1.97}
+          offset={window.innerWidth < 748 ? skypost_mobile : skypost_desktop}
           speed={0.5}
-          factor={3} //length pof background
+          factor={4} //length pof background
           style={{
             backgroundImage: `url(${IMAGES.clouds})`,
             backgroundSize: "cover",
@@ -136,9 +139,13 @@ const nightpost_desktop = 4.2;
         </ParallaxLayer>
         {/** Content daytimefun */}
         <ParallaxLayer
-          offset={window.innerWidth < 748 ? (skypost_mobile + 0.02) : (skypost_desktop + 0.02)}
-          speed={0.45}
-          factor={3} //length pof background
+          offset={
+            window.innerWidth < 748
+              ? skypost_mobile + 0.01
+              : skypost_desktop + 0.01
+          }
+          speed={0.4}
+          factor={4} //length pof background
         >
           {/** title daytimefun */}
           <h1 class="white darkoutline fix-stroke">Daytime fun</h1>
@@ -168,21 +175,24 @@ const nightpost_desktop = 4.2;
           </div>
         </ParallaxLayer>
 
-        {/** Content daytimefun */}
-
         {/* PAGE 4 PENCILS */}
         <ParallaxLayer
-          offset={window.innerWidth < 748 ? pencilpost_mobile : pencilpost_desktop}
+          offset={
+            window.innerWidth < 748 ? pencilpost_mobile : pencilpost_desktop
+          }
           speed={0.6}
           factor={3} //length pof background
           style={{
             backgroundImage: `url(${IMAGES.pencils})`,
             backgroundSize: "cover",
           }}
-        >
-        </ParallaxLayer>
+        ></ParallaxLayer>
         <ParallaxLayer
-          offset={window.innerWidth < 748 ? (pencilpost_mobile + 0.145) : (pencilpost_desktop+0.145)}
+          offset={
+            window.innerWidth < 748
+              ? pencilpost_mobile + 0.145
+              : pencilpost_desktop + 0.145
+          }
           speed={0.5}
           factor={1.2} //length pof background
         >
@@ -196,7 +206,9 @@ const nightpost_desktop = 4.2;
         </ParallaxLayer>
         {/* PAGE 5 nightitme */}
         <ParallaxLayer
-          offset={window.innerWidth < 748 ? nightpost_mobile : nightpost_desktop}
+          offset={
+            window.innerWidth < 748 ? nightpost_mobile : nightpost_desktop
+          }
           speed={0.5}
           factor={5} //length pof background
           style={{
@@ -206,7 +218,9 @@ const nightpost_desktop = 4.2;
         ></ParallaxLayer>
         {/* PAGE 5 nightitme content */}
         <ParallaxLayer
-          offset={window.innerWidth < 748 ? nightpost_mobile: nightpost_desktop}
+          offset={
+            window.innerWidth < 748 ? nightpost_mobile : nightpost_desktop
+          }
           speed={0.4}
           factor={10} //length pof background
         >
@@ -243,13 +257,19 @@ const nightpost_desktop = 4.2;
           </div>
 
           <div class="red note  padded">
-            *NOTE*: It's BYOB <br/>
+            *NOTE*: It's BYOB <br />
             <div class="yellow">
-            So bring what you like 😃<br/>
-            But we'll be sure to have a few mixers and treats for everyone!<br/>
-            (Just In Case!!) <br/> <br/>
+              So bring what you like 😃
+              <br />
+              But we'll be sure to have a few mixers and treats for everyone!
+              <br />
+              (Just In Case!!) <br /> <br />
             </div>
-            <div class="white">So dust those dancing shoes off, get those party feet ready, mark that calender off and we will see you for a night to remember in June!</div>
+            <div class="white">
+              So dust those dancing shoes off, get those party feet ready, mark
+              that calender off and we will see you for a night to remember in
+              June!
+            </div>
           </div>
         </ParallaxLayer>
       </Parallax>
