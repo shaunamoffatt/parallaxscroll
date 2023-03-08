@@ -4,14 +4,10 @@ A simple web invite that uses parallax scrolling and css.
 
 The site is deployed and can be viewed at https://alys-hen-party.netlify.app/
 
-<div style="position:relative;width:fit-content;height:fit-content;">
-            <a style="position:absolute;top:20px;right:1rem;opacity:0.8;" href="https://clipchamp.com/watch/F1hK0MgtliJ?utm_source=embed&utm_medium=embed&utm_campaign=watch">
-                <img style="height:22px;" src="https://clipchamp.com/e.svg" alt="Made with Clipchamp" />
-            </a>
-            <iframe allow="autoplay;" allowfullscreen style="border:none" src="https://clipchamp.com/watch/F1hK0MgtliJ/embed" width="640" height="360"></iframe>
-        </div>
-        
-        
+
+
+https://user-images.githubusercontent.com/53190696/223772876-c1c4266b-e239-43ea-95bd-fa7b86635753.mp4
+
 
 
 
